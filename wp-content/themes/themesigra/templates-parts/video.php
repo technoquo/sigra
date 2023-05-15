@@ -42,7 +42,7 @@
                     foreach ($esp as $ind) {
                         if ($ind == $_GET['age']) { ?>
                             <div class="swiper-slide">
-                                <iframe width="100%" height="200" src="https://player.vimeo.com/video/<?php echo $id_video; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                                <img src="https://vumbnail.com/<?php echo $id_video; ?>.jpg" alt="<?php the_title(); ?>" />
                                 <div class="title"><?php the_title() ?></div>
                                 <div class="sign"><a class="js-modal-btn d-flex just-center" data-video-id="<?php echo $id_video; ?>">Visionnez <img class="signlanguage" src="<?php echo get_template_directory_uri(); ?>/img/signlanguage.png" alt="Visionnez"></a></div>
                             </div>
