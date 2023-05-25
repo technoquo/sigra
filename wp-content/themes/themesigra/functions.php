@@ -30,7 +30,7 @@ function sigra_scripts_styles()
     wp_enqueue_style('normalize', 'https://necolas.github.io/normalize.css/8.0.1/normalize.css', array(), '8.0.1');
     wp_enqueue_style('swipper-css', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css', array(), '9.1.1');
     wp_enqueue_style('modal-video', get_template_directory_uri() . '/css/modal-video.min.css', array(), '1.0.0');
-    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize'), '1.0.0');
+    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize'), '2.0.0');
 
     // Archvios JS
     wp_enqueue_script("jquery");
