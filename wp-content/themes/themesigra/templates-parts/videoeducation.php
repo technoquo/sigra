@@ -31,7 +31,7 @@
     <section class="container seccion video">
 
 
-        <h2 class="title_categorie text-primary d-flex just-center items-center"><?php echo str_replace("-", " ", $categorie); ?><img width="150" height="150" src="<?php echo get_template_directory_uri(); ?>/img/<?php echo  $categorie; ?>.png" alt="<?php echo $categorie; ?>"></h2>
+        <h2 class="title_categorie text-primary d-flex just-center items-center"><?php echo str_replace("-", " ", $categorie); ?></h2>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <?php
@@ -82,6 +82,14 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
-
-</section>
+    <div class="d-flex just-center button-back">
+        <div>
+            <a href="http://sigra.test/videotheque/" class="d-flex just-center"><img width="10%" src="<?php echo get_template_directory_uri(); ?>/img/back.svg" alt="Retourner"></a>
+            <div class="text-center">Revenir</div>
+        </div>
+        <div>
+            <a href="javascript:history.back()" class="d-flex just-center"><img width="10%" src="<?php echo get_template_directory_uri(); ?>/img/back_1.svg" alt="Retourner"></a>
+            <div class="text-center">Retourner</div>
+        </div>
+    </div>
 </section>
