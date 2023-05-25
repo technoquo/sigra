@@ -57,44 +57,36 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="swiper mySwiper_m">
-    </section>
-    <div class="swiper-wrapper">
-        <?php
+            <div class="swiper-wrapper">
+                <?php
 
-        while ($videos->have_posts()) {
-            $videos->the_post();
+                while ($videos->have_posts()) {
+                    $videos->the_post();
 
-            $id_video = get_post_meta($post->ID, 'id_video', true);
+                    $id_video = get_post_meta($post->ID, 'id_video', true); { ?>
+                        <div class="swiper-slide">
+                            <iframe width="100%" height="200" src="https://player.vimeo.com/video/<?php echo $id_video; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                            <div class="title"> <?php the_title() ?></div>
+                        </div>
 
-            $esp = get_field('marquer_les_ages');
-
-            foreach ($esp as $ind) {
-                if ($ind == $_GET['age']) { ?>
-                    <div class="swiper-slide">
-                        <iframe width="100%" height="200" src="https://player.vimeo.com/video/<?php echo $id_video; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                        <div class="title"> <?php the_title() ?></div>
-                    </div>
-
-        <?php
+                <?php
+                    }
                 }
-            }
-        }
 
-        ?>
+                ?>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <div class="d-flex just-center button-back">
+        <div>
+            <a href="http://sigra.test/videotheque/" class="d-flex just-center"><img width="10%" src="<?php echo get_template_directory_uri(); ?>/img/back.svg" alt="Retourner"></a>
+            <div class="text-center">Revenir</div>
+        </div>
+        <div>
+            <a href="javascript:history.back()" class="d-flex just-center"><img width="10%" src="<?php echo get_template_directory_uri(); ?>/img/back_1.svg" alt="Retourner"></a>
+            <div class="text-center">Retourner</div>
+        </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    </div>
-</section>
-
-<div class="d-flex just-center button-back">
-    <div>
-        <a href="http://sigra.test/videotheque/" class="d-flex just-center"><img width="10%" src="<?php echo get_template_directory_uri(); ?>/img/back.svg" alt="Retourner"></a>
-        <div class="text-center">Revenir</div>
-    </div>
-    <div>
-        <a href="javascript:history.back()" class="d-flex just-center"><img width="10%" src="<?php echo get_template_directory_uri(); ?>/img/back_1.svg" alt="Retourner"></a>
-        <div class="text-center">Retourner</div>
-    </div>
-</div>
 </section>
