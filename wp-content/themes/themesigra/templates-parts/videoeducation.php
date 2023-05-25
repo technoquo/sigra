@@ -89,7 +89,7 @@
     </section>
     <div class="d-flex just-center button-back">
         <div>
-            <a href="http://sigra.test/videotheque/" class="d-flex just-center"><img width="10%" src="<?php echo get_template_directory_uri(); ?>/img/back.svg" alt="Retourner"></a>
+            <a href="/videotheque/" class="d-flex just-center"><img width="10%" src="<?php echo get_template_directory_uri(); ?>/img/back.svg" alt="Retourner"></a>
             <div class="text-center">Revenir</div>
         </div>
         <div>
