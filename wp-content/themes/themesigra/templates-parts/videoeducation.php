@@ -29,6 +29,11 @@
     ?>
 
     <section class="container seccion video">
+        <?php
+
+        get_template_part('templates-parts/chercher');
+
+        ?>
 
 
         <h2 class="title_categorie text-primary d-flex just-center items-center"><?php echo str_replace("-", " ", $categorie); ?></h2>

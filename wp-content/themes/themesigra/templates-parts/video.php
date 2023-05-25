@@ -27,7 +27,13 @@
 
     ?>
     <section class="container seccion video">
+        <?php
+
+        get_template_part('templates-parts/chercher');
+
+        ?>
         <h2 class="title_categorie text-primary"><?php echo str_replace("-", " ", $categorie); ?> pour l'âge: <?php echo $_GET['age']; ?></h2>
+
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <?php

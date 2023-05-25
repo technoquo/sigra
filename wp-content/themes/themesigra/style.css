@@ -844,6 +844,23 @@ body.home .header {
 }
 
 /** video ***/
+.chercher {
+    position: relative;
+    top: -20px;
+}
+
+.label_chercher {
+
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form_chercher {
+
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .js-modal-btn {
     cursor: pointer;
 }
